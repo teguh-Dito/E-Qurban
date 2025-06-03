@@ -15,7 +15,7 @@ class Admin extends BaseController
     public function index(): string
     {
         // return view('welcome_message');
-        $data['title'] = 'User List';
+        $data['title'] = 'User List'; 
 
 
         // $users = new \Myth\Auth\Models\UserModel();
@@ -36,7 +36,7 @@ class Admin extends BaseController
     {
         $data['title'] = 'User Detail';
 
-        $this->builder    ->select('users.id as userid, username, email, name');
+        $this->builder    ->select('users.id as userid, username, email, fullname, user_image, name');
         $this->builder    ->join('auth_groups_users', 'auth_groups_users.user_id = users.id');
         $this->builder    ->join('auth_groups', 'auth_groups.id = auth_groups_users.group_id');
         $this->builder    ->where('users.id', $id);

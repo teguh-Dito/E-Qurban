@@ -7,7 +7,8 @@ class User extends BaseController
     public function index(): string
     {
         // return view('welcome_message');
-        return view('user/index');
+        $data['title'] = "My Profile";
+        return view('user/index', $data);
 
     }
 }
