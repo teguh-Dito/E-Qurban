@@ -35,7 +35,7 @@
                                         </div>
 
                                     </div>
-                                    <button type="sumbit" class="btn btn-primary btn-user btn-block"><?=lang('Auth.register')?></button>
+                                    <button type="submit" class="btn btn-primary btn-user btn-block"><?=lang('Auth.register')?></button>
                                 </form>
                                 <hr>
                                 <div class="text-center">
